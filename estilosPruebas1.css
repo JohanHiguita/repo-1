@@ -1,0 +1,50 @@
+table, th, td{
+  border: red solid 1px;
+}
+
+th, td{
+  padding: 20px;
+}
+
+.div1{
+  border: blue solid 1px;
+}
+
+.div2{
+  border: red solid 1px;
+  margin: 50px;
+  padding: 10px;
+}
+
+.mediaQueries{
+   /* Mobile First  */
+  font-size: 20px;
+  color: red;
+  background-color: white;
+}
+
+@media(min-width: 600px) {
+  /* Caracteristicas para cuando la pantalla super los 600 px */
+  .mediaQueries{
+    font-size: 30px;
+    color:green;
+    background-color: gray;
+  }
+}
+
+.nav1{
+  height: 100px;
+  display: flex;
+  border: 2px solid green;
+  /* Propiedades importantes: */
+  flex-direction: column; /*row por defecto*/
+  flex-wrap: wrap;/*nowrap por defecto*/
+  justify-content: space-around;/*flex-start por defecto*/
+  align-items: center; /*stretch por defecto*/
+
+}
+
+.nav1 a{
+border: 1px solid red;
+margin: 15px;
+}
